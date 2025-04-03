@@ -42,20 +42,13 @@ export function SubscriberForm() {
       </Form.Field>
 
       <Form.Field>
-        <Form.Label>Subject</Form.Label>
-        <Form.Field kind="group">
-          <Form.Control>
-            <Form.Select
-              name="subject"
-            >
-              <option value="select-dropdown">Select dropdown</option>
-              <option value="with-options">With options</option>
-            </Form.Select>
-          </Form.Control>
-          <Form.Control fullwidth loading>
-            <Form.Input placeholder="With loading state" />
-          </Form.Control>
-        </Form.Field>
+        <Form.Label>Message</Form.Label>
+        <Form.Textarea
+          value={message}
+          onChange={(e) => {
+            return setMessage(e.target.value);
+          }}
+        />
       </Form.Field>
 
       <Form.Field kind="group">
