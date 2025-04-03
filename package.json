@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/UX308Assignment3",
+    "build": "vite build --base=/UX308ContactForm",
     "preview": "vite preview"
   },
   "dependencies": {
